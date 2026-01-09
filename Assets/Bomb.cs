@@ -20,5 +20,6 @@ public class Bomb : MonoBehaviour
         PlayerController player = other.gameObject.GetComponent<PlayerController>();
 
         player.EnableBomb();
+        Destroy(gameObject);
     }
 }

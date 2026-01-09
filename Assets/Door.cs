@@ -19,5 +19,6 @@ public class Door : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         SceneManager.LoadScene(nextLevelScene);
+        Debug.Log("COLLLLL");
     }
 }
