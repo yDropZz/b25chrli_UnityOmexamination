@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7831730867467344989}
   - component: {fileID: 1295483864593234896}
   - component: {fileID: 8207355533338107074}
+  - component: {fileID: 7035026355388227463}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -111,9 +112,9 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 5
   healthSlider: {fileID: 0}
-  walkSpeed: 7
-  runSpeed: 10
-  jumpingPower: 16
+  walkSpeed: 3
+  runSpeed: 5
+  jumpingPower: 5
   isRunning: 0
   dashingPower: 24
   dashingTime: 0.2
@@ -297,7 +298,44 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!70 &7035026355388227463
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266216831775549710}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.57, y: 1.96}
+  m_Direction: 0
 --- !u!1 &2516182750988324344
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 2516182750988324344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalPosition: {x: 0, y: -0.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
