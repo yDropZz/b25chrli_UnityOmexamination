@@ -62,7 +62,8 @@ public class PlayerController : MonoBehaviour
     public float wallJumpingDuration = 0.4f;
     public Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
-
+    public GameObject bomb;
+    
     [SerializeField] public Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -79,6 +80,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         
+    }
+
+    public void EnableBomb()
+    {
+        bomb.SetActive(true);
     }
 
     // Update is called once per frame
