@@ -25,8 +25,8 @@ public class PlayerController : MonoBehaviour
     
     // HP
     [Header("Health & DMG")] 
-    [SerializeField] public int maxHealth = 5;
-    [SerializeField] public int currentHealth = 5;
+    [SerializeField] public int maxHealth = 20;
+    [SerializeField] public int currentHealth = 20;
     [SerializeField] private Slider healthSlider;
     
     
