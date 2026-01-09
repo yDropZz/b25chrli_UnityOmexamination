@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [Header("Health & DMG")] 
     [SerializeField] public int maxHealth = 5;
     [SerializeField] public int currentHealth = 5;
+    [SerializeField] private Slider healthSlider;
     
     
     // movement
@@ -82,7 +84,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        healthSlider.value = currentHealth / maxHealth;
+        
         scoreText.text = "Score: " + score;
         healthText.text = "Health: " + currentHealth;
 
